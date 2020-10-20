@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="multip.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[class=in1]{
+        padding: 1px;
+        margin-left: 3px;
+        border: 1px solid black;
+        border-radius: 3px;
+        
+    }
+    input[class=in2]{
+        padding: 1px;
+        margin-left: 3px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    input[class=s1]:hover{
+        color: blue;
+    }
+    input[class=s2]:hover{
+        color:red;
+    }
+    input[class=s3]:hover{
+        color:purple;
+    }
+    input[class=s4]:hover{
+        color: skyblue;
+    }
+   
+</style>
+<body>
+    1st Number : <input class="in1" id="firstNumber" type="number">
+    <br><br>
+    2st Number : <input class="in2" id="secondNumber" type="number">
+    <br><br>
+    <input class="s1" onclick="multiplyBy()" type="button" value="Multiply"/>
+    <input class="s2" onclick="divideBy()" type="button" value="Divide"/>
+    <input class="s3" onclick="additionBy()" type="button" value="Add"/>
+    <input class="s4" onclick="subtructionBy()" type="button" value="Subtruction"/>
+
+    <p>The Result is :</p>
+    <span id="result"></span>
+</body>
+</html>
